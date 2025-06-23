@@ -1,0 +1,45 @@
+﻿# Ignorar o ambiente virtual
+venv/
+
+# Arquivos compilados do Python
+__pycache__/
+*.py[cod]
+*.class
+
+# Arquivos de log
+*.log
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de configuração do VSCode
+.vscode/
+.idea/
+
+# Arquivos de cache de pacote
+*.egg-info/
+.eggs/
+
+# Arquivos de testes e outputs temporários
+*.bak
+*.tmp
+
+# Arquivos de configurações locais
+.env
+.env.*
+
+# Segurança: evitar subir chaves
+*.key
+*.pem
+
+# Ignorar qualquer diretório de backup automático
+backup/
+bkp_*/
+
+# Ignorar imagens de teste
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
