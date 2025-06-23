@@ -1,0 +1,6 @@
+streamlit==1.35.0
+pillow>=10.3.0
+opencv-python>=4.9.0.80
+easyocr==1.7.1
+openai==1.21.1
+numpy==1.26.4
