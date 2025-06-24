@@ -1,24 +1,18 @@
-# Personalizados Vann SaaS
+# Personalizados Vann SaaS - Cloud Version
 
-Sistema completo de gestão e produção de personalizados para pequenas gráficas, com foco total na experiência do cliente e produtividade operacional.
+Sistema SaaS para gestão de personalizados, agora estruturado no formato oficial de Multi-Page do Streamlit Cloud.
 
-## 🚀 Módulos disponíveis
+---
 
-- 📂 **Catálogo de Modelos**: cadastro e gerenciamento de temas e modelos de arte.
-- 🎨 **Personalizador**: inserção automática de nome e idade nas artes.
-- 🏷️ **Produção**: upload, redimensionamento e organização dos pedidos prontos para impressão.
-
-## 📦 Estrutura do Projeto
+## 🚀 Estrutura do Projeto
 
 ```
-Personalizados-Vann-SaaS-Limpo
+Personalizados-Vann-SaaS-Cloud
 │
-├── comerciais
-│   ├── catalogo_modelos.py
-│   └── personalizacao.py
-│
-├── producao
-│   └── personalizados_vann_upload.py
+├── pages
+│   ├── 1_Catalogo_Modelos.py
+│   ├── 2_Personalizador.py
+│   └── 3_Producao.py
 │
 ├── utils
 │   ├── ajuste_automatico.py
@@ -26,53 +20,63 @@ Personalizados-Vann-SaaS-Limpo
 │
 ├── processador_imagem.py
 ├── registrador_pedidos.py
-├── modelos
-├── produzidos
-├── uploads
-├── venv
 ├── requirements.txt
-└── main.py
+├── README.md
+└── .gitignore
 ```
 
-## ⚙️ Instalação e execução
+---
 
-### 1️⃣ Clone o repositório (ou copie sua estrutura local)
+## ⚙️ Como rodar localmente
 
-### 2️⃣ Crie e ative o ambiente virtual
+1️⃣ Crie o ambiente virtual
 
-**Windows (PowerShell):**
 ```bash
 python -m venv venv
-venv\Scripts\activate
+venv\Scripts\activate  (Windows)
+# ou
+source venv/bin/activate  (Linux/Mac)
 ```
 
-**Linux/MacOS:**
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-### 3️⃣ Instale as dependências
+2️⃣ Instale as dependências:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4️⃣ Execute o sistema
+3️⃣ Rode o Streamlit:
 
 ```bash
-streamlit run main.py
+streamlit run pages/1_Catalogo_Modelos.py
 ```
-
-## 🎯 Pronto para SaaS real!
-
-A partir dessa base podemos evoluir para:
-- Histórico de pedidos
-- Controle de aprovação online
-- Dashboard de produção
-- Gestão multiusuário
-- Backup e versionamento
 
 ---
 
-Desenvolvido com ❤️ no Vann SaaS Project.
+## ☁️ Como rodar no Streamlit Cloud
+
+- Faça o deploy direto conectando o repositório GitHub.
+- O Streamlit Cloud detecta a pasta `pages/` automaticamente e cria o menu.
+- Não há necessidade de configurar Python Path ou fazer ajustes de imports.
+
+---
+
+## 📦 requirements.txt
+
+```
+streamlit==1.35.0
+Pillow==10.3.0
+```
+
+---
+
+## 🚀 Pronto para escalar SaaS Vann 2.0
+
+- Histórico de pedidos
+- Aprovação online
+- Dashboard de produção
+- Controle multiusuário
+- Backup e monitoramento
+
+---
+
+Desenvolvido com ❤️ por Rodrigo e Buddy (ChatGPT).
