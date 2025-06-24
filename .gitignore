@@ -1,24 +1,14 @@
-﻿venv/
+﻿# Virtual Environment
+venv/
+
+# Cache do Python
 __pycache__/
-*.py[cod]
-*.class
-*.log
-.DS_Store
+
+# Dados locais de produção
+uploads/
+produzidos/
+modelos/
+
+# Arquivos temporários do sistema operacional
+*.DS_Store
 Thumbs.db
-.vscode/
-.idea/
-*.egg-info/
-.eggs/
-*.bak
-*.tmp
-.env
-.env.*
-*.key
-*.pem
-backup/
-bkp_*/
-*.png
-*.jpg
-*.jpeg
-*.tif
-*.tiff
