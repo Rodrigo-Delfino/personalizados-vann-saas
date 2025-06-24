@@ -1,5 +1,9 @@
-import streamlit as st
+import sys
 import os
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+import streamlit as st
 import processador_imagem  # Ajuste o import conforme a sua estrutura de pacotes
 
 # Configuração da página
